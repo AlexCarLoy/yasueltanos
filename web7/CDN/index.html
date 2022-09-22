@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bootstrap demo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <!-- shift alt para comentar -->
+    <!-- shift alt para comentar y shift alt a con el texto seleccionado-->
         <!--  tres columnas identicas usando col -->
         <div class="container border border-success border-1 text-center my-5">
             <div class="row">
@@ -33,7 +34,7 @@
             </div>
         </div>
         </div>
-        <!-- 2 columnas identicas y una desigual -->
+        <!-- 2 columnas identicas y una desigual con breakpoint -->
         <div class="container text-center my-5">
             <div class="row">
                 <div class="col-md-2 border border-primary">col-2</div>
@@ -41,22 +42,45 @@
                 <div class="col-md-2 border border-danger">col-2</div>
             </div>
         </div>
-        </div>
-        <!-- 2 columnas identicas y una desigual -->
+
+        <!-- 2 columnas identicas y una desigual con 2 breakpoints-->
         <div class="container text-center my-5">
             <div class="row">
-                <div class="col-md-2 col-sm-4 border border-primary">col-md-2 col-sm-4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis beatae error fugit. Inventore impedit porro, harum doloremque nulla tenetur est autem ab, modi error nobis quam enim eaque numquam culpa.</div>
-                <div class="col-md-8 col-sm-8 border border-secondary">col-md-8 col-sm-8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro iure distinctio modi ratione fugit dolore error vero quos debitis maxime ullam facere, saepe voluptate maiores corporis corrupti sunt eius odio.
-                Molestiae quibusdam labore, fugit facere distinctio odio quaerat tempora asperiores! Enim tempora impedit facere nemo nostrum autem officia, animi illum eaque molestias libero sit perspiciatis, in officiis necessitatibus nulla velit.
-                Quas aliquam omnis excepturi sunt dolor dolore error, modi accusantium illum eos harum consectetur nemo impedit doloribus aut in ut tempore praesentium, blanditiis deleniti. Nostrum possimus natus blanditiis maiores praesentium?</div>
-                <div class="col-md-2 col-sm-12 border border-danger">col-md-2 col-sm-12 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus sint possimus excepturi officiis odit cumque voluptatum repudiandae, tenetur quod quisquam qui nostrum ratione ducimus itaque, vitae, inventore debitis. Laudantium.
-                Perspiciatis voluptate vel iusto, fugiat qui eligendi sunt eos accusantium odio voluptatibus perferendis dolor itaque ducimus? Dolore quaerat minima aperiam deserunt error animi quisquam consequuntur, aspernatur mollitia adipisci non a!</div>
+                <div class="col-md-2 col-sm-4 border border-primary">col-md-2 col-sm-4</div>
+                <div class="col-md-8 col-sm-8 border border-secondary">col-md-8 col-sm-8</div>
+                <div class="col-md-2 col-sm-12 border border-danger">col-md-2 col-sm-12</div>
             </div>
         </div>
+        <!-- 2 columnas identicas y una desigual con 2 breakpoints y fila con min de altura-->
+        <div class="container text-center my-5">
+            <div class="row altura-min">
+                <div class="col-md-2 col-sm-4 align-self-start border border-primary altura-col">md-2 sm-4 </div>
+                <div class="col-md-8 col-sm-8 align-self-center border border-secondary altura-col">md-8 sm-8 </div>
+                <div class="col-md-2 col-sm-12 align-self-end border border-danger altura-col">md-2 sm-12  </div>
+            </div>
         </div>
+        <!-- 2 columnas identicas y una desigual con 2 breakpoints y fila con min de altura-->
+        <div class="container text-center my-5">
+            <div class="row justify-content-end">
+                <div class="col-md-2 border border-primary ">md-2 </div>
+                <div class="col-md-8 border border-secondary">md-8 </div>
+            </div>
+        </div>
+<!-- grid complejo -->
+    <div class="container text-center my-5">
+        <div class="row justify-content-end">
+            <div class="col-md-6  border border-primary">
+                    <div class="row">
+                        <div class="col-md-12 border border-secondary">col</div>
+                        <div class="col-md-12 border border-secondary">col</div>
+                    </div>
+            </div>
+        <div class="col-md-3  border border-secondary">md-6 </div>
+    <div class="col-md-3  border border-secondary">md-6 </div>
+    </div>
 
 
-        </body>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
 </html>
